@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+    <script>
+
+
+        let user;
+        let computer;
+        let resul="무승부";
+
+        while(true){
+            user = prompt("가위 바위 보 " , " 가위:0 , 바위:1 , 보:2");
+            computer = Math.floor( Math.random() *3);   // 0 1 2     가위, 바위 , 보
+
+            console.log(  computer) ;
+            if( user != computer){
+                // 승패 판단
+                if( user ==0){
+                    if( computer ==2)
+                     result="사용자 승";
+                    else
+                     result="사용자 패";
+
+                }else if( user==1){
+                    if( computer ==0)
+                     result="사용자 승";
+                    else
+                     result="사용자 패";
+
+                }else if( user ==2){
+                    if( computer ==1)
+                     result="사용자 승";
+                    else
+                     result="사용자 패";
+
+                }
+                // 반복종료
+                break;  
+            }else if( user == computer){
+                result="무승부"
+                alert("무승부.. 다시 시도합니다");
+            }
+        }
+
+        //승부결과 출력
+        alert( result);
+    </script>
+    
+</body>
+</html>

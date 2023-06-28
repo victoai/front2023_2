@@ -1,0 +1,74 @@
+
+
+##editor 설치
+ 
+vscode  download
+download for windows   - System Installer   x64버전 다운로드 
+
+
+##작업폴더만들기
+    내문서 ->gildong- >  javafullstack    ->        frontws    (front작업영역)
+                                                                 -notepad
+                                                                 -1day_2023_6_14
+
+
+파일->폴더열기 ->  frontws 선택
+
+## 확장프로그램설치
+
+확장버튼 :            
+ : auto rename :   태그명 앞의내용바꾸면 뒤의 이름이 자동으로 바뀜
+ : live server     :   작성한  html 바로 실행해서 볼 수 있음
+
+
+# html : ko 설정
+# windows = ctrl  + shift + p 
+   macos = cmd+ shift +  p
+
+  settings.json  (사용자)
+ "emmet.variables":{ 
+     "lang" : "ko"
+}
+
+
+# 첫html문서 만들기
+index.html 작성
+!  엔터키 누름 
+
+기본html문서 만들어짐 
+hello html~ 만나기
+
+
+
+#github  가입하기   아이디, 비번
+#git 설치
+#front repository 만들기
+ 
+  
+#사용자정보 등록      
+  git config --global user.name  "sample"
+  git config --global user.email  "sample@gmail.com"
+
+   git  config --list
+   등록정보 확인
+#
+
+git init 
+git commit -m "homework  sample"
+git branch -M main
+git remote add origin https://github.com/sample/front.git
+git push -u origin main
+
+
+
+https://chat.openai.com/chat
+signup
+-- continue with Google
+
+ 
+
+
+                                        
+                                                     
+ 
+

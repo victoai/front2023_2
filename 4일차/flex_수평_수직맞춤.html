@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <style>
+
+        ul{
+            width: 800px;
+            height: 200px;
+            background-color: antiquewhite;
+            list-style: none;
+            display: flex;
+            flex-wrap: wrap;
+
+            justify-content: center;
+            align-items: center;  /* content가  균등하게 수직으로 나눠짐 내용이 한 줄 일 때는 두 개가 같은 효과가 있음 */ 
+            /**/
+
+           /* align-content: center; /*  content가  수직 가운데 몰림 현상*/
+
+            margin: 0 auto;
+        }
+
+        ul li{
+            width: 100px;
+            height: 50px;
+            border:1px solid black;
+
+            /**/
+
+           
+        }
+
+        ul li:last-child{
+            width: 100px;
+            height: 30px;
+            border:1px solid black;
+        }
+    </style>
+</head>
+<body>
+
+
+     <ul>
+        <li>a</li>
+        <li>b</li>
+        <li>c</li>
+        <li>d</li>
+        <li>a</li>
+       
+     </ul>
+    
+</body>
+</html>

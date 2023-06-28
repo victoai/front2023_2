@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        #myElement::after {
+            content: attr(data-content);
+            /* 가상 요소의 내용을 data-content 속성 값으로 설정합니다. */
+            color: brown;
+        }
+    </style>
+
+
+</head>
+
+<body>
+
+
+    <div id="myElement">Hello, World!</div>
+    <button onclick="add()">추가</button>
+
+
+    <script>
+
+
+
+        function add() {
+            // 요소를 선택합니다.
+            const element = document.getElementById("myElement");
+
+            // 요소의 data-content 속성 값을 변경하여 가상 요소에 동적으로 표시될 텍스트를 설정합니다.
+            element.setAttribute("data-content", "new");
+
+
+        }
+
+    </script>
+
+</body>
+
+</html>

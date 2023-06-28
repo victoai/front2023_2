@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <style>
+        ul.menu {
+
+            display: flex;
+            list-style: none;
+        }
+
+        ul.menu li {
+
+            position: relative;
+
+        }
+
+        ul.menu li a {
+            padding: 10px 11px;
+            color: #ccc;
+            
+
+        }
+
+        ul.menu li a:hover {
+            color: #000;
+        }
+
+
+
+        ul.menu li::before {
+            content: "";
+            display: block;
+            width: 1px;
+            height: 12px;
+            background-color: rgb(188, 192, 184);
+            position: absolute;
+            top: 0px;
+            bottom: 0px;
+            margin: auto;
+        }
+
+        ul.menu li:first-child::before {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+
+
+
+    <ul class="menu">
+        <li><a href="#">Sign In</a></li>
+        <li><a href="#">Sign In</a></li>
+        <li><a href="#">Sign In</a></li>
+        <li><a href="#">Sign In</a></li>
+    </ul>
+</body>
+
+</html>

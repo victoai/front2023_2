@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="widt=device-width, initial-scale=1.0">
+    <title>Document</title>   
+    <style>
+         
+        .nav{
+            height:80px;
+            background-color: azure;
+            position:relative;
+            margin-top: 100px;
+        }
+        .menu{
+            position: absolute;
+            right:0px;
+            width:260px;
+            display:flex;
+        }
+
+
+        .item{           
+            margin-left: 5px;
+            text-align: center;
+            border-radius: 50%;
+            font-size:12px;
+        }
+
+        .item1{     
+            margin-top:10px;      
+            width:60px;
+            height:60px;          
+            line-height: 60px;           
+        }
+
+        .item2{
+            margin-top:20px;
+            width:40px;
+            height:40px;           
+            line-height: 100%;        
+            
+            background-image: url(https://lh3.googleusercontent.com/ogw/ADGmqu_sKQ74r14XW5bWUAIRoXn7hut8HTvtMAAH_iD3EA=s64-c-mo);
+            background-size: cover ;
+            background-position: center;
+            
+          
+        }
+
+
+        .item1:hover{
+             background-color:rgb(226, 222, 222);
+          
+
+        }
+        .item2:hover{
+           box-shadow: 0px 0px 10px 0px rgb(83, 173, 106);
+        }        
+
+
+        .search-bar{
+            width:600px;
+            margin: 20px auto;
+        }
+        .search-bar > .input {            
+            width:600px;
+            height:50px;
+            border:0.1px solid rgb(173, 172, 172);
+          
+            border-radius: 50px;         
+        }
+        .search-bar > .input:hover {       
+            box-shadow: 0px 0px 10px 0px rgb(173, 172, 172);
+        }
+
+
+
+        .title .wrap{
+            width:300px;           
+            margin:50px auto;
+            
+        }
+        
+        .title .wrap span{
+            font-size: 70px;     
+           
+        }
+
+
+        .title .wrap span:nth-child(1){
+            color: #4285f4;
+        }
+        .title .wrap span:nth-child(2){
+            
+        }
+        .title .wrap span:nth-child(3){
+            
+        }
+        .title .wrap span:nth-child(4){
+            
+        }
+        .title .wrap span:nth-child(5){
+            
+        }
+        .title .wrap span:nth-child(6){
+            
+        }
+    </style>
+</head>
+<body>
+    
+
+
+     
+    <!-- 메뉴-->
+    <div class="nav">
+        <div  class="menu">
+              <div class="item item1">Gmail</div>
+              <div class="item item1">로그인</div>
+              <div class="item item1" >이미지</div>
+              <div class="item  item2" ></div>
+        </div>
+    </div>
+    <!--title-->
+    <div class="title">
+        <div class="wrap">
+            <span>G</span>
+            <span>o</span>
+            <span>o</span>
+            <span>g</span>
+            <span>l</span>
+            <span>e</span>
+        </div>
+    </div>
+
+    <!--검색바-->
+    <div class="search-bar">
+        <input type="text" class="input" >
+    </div>
+    <div></div>
+    <div></div>
+</body>
+</html>

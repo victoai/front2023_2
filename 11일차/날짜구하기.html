@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script>
+
+      
+            // 내장객체 Date()  ;  날짜관련기능제공
+
+            let nowDate  = new Date();
+
+
+            console.log( nowDate);
+            let birthYear = nowDate.getFullYear();
+            console.log( birthYear);
+
+
+            let bornYear=1975;
+            let age = birthYear - bornYear;            
+            console.log(age);
+
+
+            // 우리만나지  언제지   2011 01 10
+            //
+
+
+            let firstDay = new Date( "2023-06-01");   
+            let passedTime  =  nowDate.getTime() - firstDay.getTime();   // 밀리초로 바꿈  ( 기준)
+            let passedDay  = Math.round( passedTime /  (1000 *60*60 *24));    // 1000  초 분 시간
+            alert( passedDay);
+
+
+
+
+        
+    </script>
+</body>
+</html>

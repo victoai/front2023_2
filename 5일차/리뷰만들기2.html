@@ -1,0 +1,145 @@
+ 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=JetBrains+Mono:wght@100&family=Righteous&display=swap" rel="stylesheet">                                               
+
+    <style>
+    /* 전체 font 끌꼴 변경 */
+    
+        *{
+ 
+		 font-family: 'Black Han Sans', sans-serif;	 		 
+        }
+        
+        
+          .wrap{
+            width:820px;             
+            margin:0px auto;
+            margin-top:100px;   
+                 
+        }
+        
+      
+
+        .line1{
+
+            height: 60px;
+            text-align:center;
+           
+        }
+        .line h3{
+         font-family: 'JetBrains Mono', monospace;
+        }
+
+
+        .line2{
+
+            height: 400px;
+            text-align:center;
+            display:flex;
+               margin:0px auto;
+        }
+
+        
+        .line3{
+            width:750px;
+            height: 200px;           
+            display: flex;
+            margin:0px auto;
+        }
+
+        
+        .line4{
+        height: 100px;
+        margin:0px auto;
+        }
+        
+        .line5{
+        height: 100px;
+        margin:0px auto;
+        }
+        .line6{
+        height:80px;
+        position:fixed;
+        bottom:0px;
+        right:0px;        
+       
+        }
+         /* 두번째 줄의 두 컬럼*/
+
+        .col_2{  
+            text-align:center;
+            width:400px;
+        }
+        
+        /* 세번째 줄의 세 컬럼*/
+        .col_3{
+            width:250px;
+            text-align:center;
+        }
+
+        /*input, textarea  너비  100% 한 줄 차지하기 */
+        input{
+            width:100%;
+        }
+        textarea{
+            width:100%;
+        }
+      
+       img{
+           display:block;
+       } 
+    </style>
+    
+   
+</head>
+<body>
+    
+   <div class="wrap">
+    <div class="line1"> <h3> REVIEW DETAIL</h3></div>
+    <div class="line2">
+        <div class="col_2">               
+             <label>이미지</label>                
+             <img  src="http://placehold.it/300X300"  width="350px" height="300px" >       
+        </div>
+        <div class="col_2">              
+         <label>맛평가(후기)</label>   
+         <textarea    rows="6"  name="id"> </textarea>        
+        </div>
+    </div>
+    <div class="line3">
+        <div class="col_3">         
+             <label  >연령대</label>
+             <input type="text"   name="">         
+       </div>
+        <div class="col_3">
+         <label >만족도</label>
+         <input type="text"       name="">
+        </div>
+        <div class="col_3">
+         <label  >성별</label>
+         <input type="text"      name="">
+        </div>
+    </div>
+    <div class="line4">      
+            <label >판매점 정보(구매사이트)</label>
+            <input type="text"     name="">         
+    </div>
+    <div class="line5">      
+            <label  >더 나누고 싶은 정보</label>
+            <textarea   rows="3"     name=""></textarea>         
+    </div>
+     <div class="line6"> 
+            좋다고 생각되시면 꾹~~~                
+           <img src="images/like.jpg"   id="img1" width="60px" height="60px"   >                 
+    </div>
+    <input type="hidden"   id="num" value="">
+   </div>   
+</body>
+</html>

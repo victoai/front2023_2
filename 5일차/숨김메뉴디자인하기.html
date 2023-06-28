@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        ul {
+            display: flex;
+            list-style: none;
+        }
+
+        li{
+            width: 70px;
+            height: 40px;
+            border:1px solid black;
+            position: relative;
+        }
+
+
+        .hidden-menu{
+            position: absolute;
+            top:40px;
+            width: 200px;
+            height: 200px;
+            border: 1px solid black;
+            left:-60px;
+
+            display: none;
+        }
+
+        li:hover   .hidden-menu{
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    
+
+    <ul>
+        <li>로그인</li>
+        <li>장바구니</li>
+        <li>쇼핑
+            <div  class="hidden-menu">
+                  히든
+            </div>
+        </li>
+        
+    </ul>
+</body>
+</html>
