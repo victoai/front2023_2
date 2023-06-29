@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function calcAmt( obj){
+          
+          
+            //단가태그       
+           let priceTdTag =   obj.parentElement;         
+           //수량태그
+           let qtyTdTag = priceTdTag.previousElementSibling;
+           // 금액태그
+           let amtTag = priceTdTag.nextElementSibling;
+
+
+           //금액input
+           let amtE =  amtTag.firstElementChild;   
+           
+           // 수량input 
+           let qtyE =qtyTdTag.firstElementChild;
+
+
+           // 단가, 수량 구해서 금액input value (값) 변경
+           let price  =  obj.value;    
+           let qty =  qtyE.value;
+           amtE.value  = price*qty; 
+ 
+
+        }
+    </script>
+</head>
+<body>
+    <table>
+        <tr>
+            <td>제품명</td>
+            <td>수량</td>
+            <td>단가</td>
+            <td>금액</td>
+        </tr>
+        <tr>
+            <td><input type="text" value="빼빼로"></td>            
+            <td><input type="text"></td>
+            <td><input type="text" onkeyup="calcAmt(this)"></td>
+            <td><input type="text"></td>
+        </tr>
+    </table>
+    
+</body>
+</html>
