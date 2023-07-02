@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+
+
+        let arr= ['apple','banana','melon'];    
+        console.log( arr);
+
+
+        let arrString  = JSON.stringify(arr) ;  /* 배열을  배열의 구조를 가진  stringify 문자열로 바꾼다는 의미 */
+        console.log( arrString);  //배열의 구조를 문자열    ["apple","banana","melon"]
+
+
+        let arrJson  =  JSON.parse (arrString);
+        console.log( arrJson);
+
+
+
+        arrJson.push( "strawberry")
+
+        //로컬저장소 
+        localStorage.setItem("searchList",  JSON.stringify( arrJson));
+
+
+        //로컬저장소  가져오기
+        let searchListValue  =  localStorage.getItem("searchList");
+
+        //배열로 바꾸기
+        let saveArry =  JSON.parse( searchListValue) ;
+        console.log(  searchListValue);
+        console.log( saveArry );
+
+
+        
+
+
+    </script>
+    
+</body>
+</html>

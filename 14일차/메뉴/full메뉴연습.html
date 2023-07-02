@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+
+        *{
+            padding: 0px;
+            margin: 0px;
+            
+        }
+
+        ul{
+          
+        }
+         nav{
+            background-color: rgb(207, 207, 215);
+             
+        }
+
+        .inner{
+            width: 1200px;
+            height: 300px;
+            background-color: rgb(148, 97, 34);
+
+             /* 가운데 보내기*/
+            margin: 0 auto;
+
+            position: relative;
+
+            
+        }
+
+        .menu{
+            position: absolute;
+            bottom: 0px;
+            right: 0px;
+
+
+            display: flex;
+            list-style: none;
+
+            /*border: 1px solid black;*/
+
+        }
+
+        /*  상위메뉴 사이의 간격을 주지 말것
+        .menu-item{
+            margin-left: 20px;           
+        }*/
+
+
+        .menu-content{
+            display: none;
+        }
+
+        /* 이름영역에 패딩으로 크기 주기*/
+        .menu-name{
+            padding: 10px 20px 30px 20px; 
+        }
+
+        .menu-name:hover{
+            border-radius: 10px 10px 0px  0px;
+            background-color: rgb(130, 77, 11);
+            color: white;
+        }
+
+        .menu-item:hover .menu-content{
+          
+          
+            position: fixed;            
+            left: 0px;
+            width: 100%;
+            height: 300px;
+            background-color: blueviolet;
+            display: block;
+        }
+
+        /*하위 메뉴 css*/
+        .menu-content{
+          
+        }
+
+    </style>
+</head>
+<body>
+    
+
+    <!-- nav 영역-->
+    <nav>
+        <!-- inner 영역-->
+        <div class="inner">
+            <!-- 메뉴바-->
+           <ul class="menu">
+            <li class="menu-item">
+               <div class="menu-name"  > 상위메뉴1</div>  
+               <div class="menu-content">
+                   <!-- 하위메뉴-->
+                   aaaa 
+               </div>
+            </li>
+            <li class="menu-item">
+                <div class="menu-name"  > 상위메뉴1</div>  
+                <div class="menu-content">
+                    <!-- 하위메뉴-->
+                    bbbbbbb 
+                </div>
+             </li>
+
+             <li class="menu-item">
+                <div class="menu-name"  > 상위메뉴1</div>  
+                <div class="menu-content">
+                    <!-- 하위메뉴-->
+                    ccccccc 
+                </div>
+             </li>
+             <li class="menu-item">
+                <div class="menu-name"  > 상위메뉴1</div>  
+                <div class="menu-content">
+                    <!-- 하위메뉴-->
+                    ddddddd  
+                </div>
+             </li>
+           </ul>
+        </div>
+    </nav>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script>
+
+    // 저장소에 값을 저장하기, 불러오기  //  key, value 형태로 저장한다
+     localStorage.setItem("testKey", "testvalue입니다");
+     let saveString  = localStorage.getItem("testKey");
+     console.log( saveString);
+
+
+    //배열을 저장하는 방법   (  JSON.stringify()  , JSON.parse()  사용함 )
+    // 배열의  하나의  string형태로 저장해야함
+    // 읽어온 String형태의 배열의 원래 배열로 변환해야 함 
+ 
+    let testArry= [a,b,c,d];
+    let testArryStr = JSON.stringify(testArry );
+
+    console.log( testArry);
+    console.log(  testArryStr);
+
+
+    let testArry2  = JSON.parse( testArry);
+    console.log( "배열로===> ")
+    console.log( testArry2);
+    
+
+    </script>
+
+
+</body>
+</html>

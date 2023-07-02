@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>배열 저장 예제</title>
+</head>
+<body>
+  <h1>배열 저장 예제</h1>
+
+  <input type="text" id="myInput">
+  <button onclick="saveData()">데이터 저장</button>
+  <button onclick="loadData()">데이터 불러오기</button>
+
+  <script>
+    function saveData() {
+      var input = document.getElementById('myInput').value;
+      var existingData = localStorage.getItem('myArray');
+
+
+      console.log(  "String"  + existingData);  // [ 'a' ,'b' ,'c' ,'d'   ]
+
+      var dataArray = existingData ? JSON.parse(existingData) : [];  //  JSON   <-   String
+
+      console.log(  "json" + dataArray)   
+      dataArray.push(input);
+
+      localStorage.setItem('myArray', JSON.stringify(dataArray));  //   JSON  -> String
+      console.log('데이터가 저장되었습니다.');
+    }
+
+    function loadData() {
+      var data = localStorage.getItem('myArray');
+      if (data) {
+        var dataArray = JSON.parse(data);
+        console.log('불러온 데이터:', dataArray);
+      } else {
+        console.log('저장된 데이터가 없습니다.');
+      }
+    }
+  </script>
+</body>
+</html>

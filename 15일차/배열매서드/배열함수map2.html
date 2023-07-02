@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+
+        let arr=[ 3,8,9];
+
+        let newArr = [];  // let newArr = new Array(3);
+        for( let i=0 ; i < arr.length ; i++){
+            newArr[i] = arr[i] * arr[i] ;
+        }
+        console.log( arr);
+        console.log( newArr);
+
+       let newArr2 =  arr.map(  function( item ){
+             return item* item;
+        });
+
+        console.log( newArr2);
+        let newArr3 =  arr.map(   item =>item*item);
+        console.log( newArr3);
+
+
+        //배열만들고
+        //forEach
+        //fill
+
+        //map 
+        // 문제    let  names= [ "박민주" , "윤성혁 " , "장의수 " , "박혜리"] ;
+        // forEach 출력하기
+        // map 이용해서   이름뒤에님이 붙은 배열 만들기
+        
+    
+
+        let numbers= new Array(45);         // map 매서드에서 함수호출시 배열의 요소와 index 값을 넘겨줌  
+        let newNumbers = numbers.fill().map( function( item,index){
+            return  index+1;
+        }); 
+
+        console.log(" newnumbers" +  newNumbers);
+
+
+       /* 
+        let numbers2  = new Array(45).fill().map(  (item, index)=>  index+1);
+        console.log( numbers2);
+     */
+    </script>
+    
+</body>
+</html>

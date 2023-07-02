@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+  <script>
+// 함수이름,   매개변수 , 리턴 
+    function a(){
+        alert("a");
+    }
+    function b( number){
+        alert(number);
+    }
+    function c( number){
+        alert(number*number);
+        return number* number;
+    }
+    a();
+    b(5);
+    let result  = c(2);
+    alert( "결과값" + result);
+    //고차함수 : 매개변수 함수를 받는다
+    function hF(  f){
+        f();
+    }
+
+    alert("==>고차함수");
+    hF( a);  // 매개변수 함수를 전달함  , 이름있는함수, 이름없이 (익명함수)
+
+    hF( function(){
+          alert("aa");
+    });
+
+    //고차함수만들기 예제 
+
+
+////
+
+
+    alert("==>고차함수2");
+    function hF2( f ){
+        let arr= [ 5,6,3];
+        for( let i=0; i< arr.length ;i++){
+            f( arr[i]);
+        }
+    }
+
+
+    hF2( function( item){
+         alert( item);
+    });
+
+
+
+   
+  </script>
+    
+</body>
+</html>

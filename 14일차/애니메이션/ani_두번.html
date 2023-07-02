@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box1{
+            width: 100px;
+            height: 100px;
+            margin: 60px;
+            background-color: blue;
+            animation: rotate0 3s infinite  ; 
+/*
+            animation: rotate 1.5s infinite, bg 1.5s infinite alternate;
+             animation: rotate 1.5s infinite, bg 1.5s infinite alternate;
+             */
+
+             /* 요소에  rotate 애니메이션을   1.5초 동안 계속 회전시키며 무한히 반복합/
+            /* 콤마로 구분된 2개의 애니메이션 효과 적용*/
+            /*
+            이 애니메이션은 요소에 배경 전환 효과를 적용합니다.
+             일반적으로 서로 다른 배경 속성으로 정의된 두 가지 상태 사이를 번갈아가며 전환합니다.
+              한 상태에서 다른 상태로 전환하는 데 1.5초가 걸리며, 무한히 반복됩니다. 
+            "alternate" 키워드는 애니메이션을 매 번 반복할 때마다 방향을 반대로 변경하여 왔다갔다 효과를 만듭니다.*/
+        }
+
+
+        .box2{
+            width: 100px;
+            height: 100px;
+            margin: 60px;
+            background-color: blue;      
+ 
+            animation:   bg 1.5s infinite alternate;
+           
+
+             /* 요소에  rotate 애니메이션을   1.5초 동안 계속 회전시키며 무한히 반복합/
+            /* 콤마로 구분된 2개의 애니메이션 효과 적용*/
+            /*
+            이 애니메이션은 요소에 배경 전환 효과를 적용합니다.
+             일반적으로 서로 다른 배경 속성으로 정의된 두 가지 상태 사이를 번갈아가며 전환합니다.
+              한 상태에서 다른 상태로 전환하는 데 1.5초가 걸리며, 무한히 반복됩니다. 
+            "alternate" 키워드는 애니메이션을 매 번 반복할 때마다 방향을 반대로 변경하여 왔다갔다 효과를 만듭니다.*/
+        }
+
+
+        .box3{
+            width: 100px;
+            height: 100px;
+            margin: 60px;
+            background-color: blue;
+            animation: rotate  5s forwards  alternate  ;    /*애니메이션을 5초동안 지속함 , 한 번 수행*/
+ 
+        }
+
+
+        @keyframes rotate {
+            from{
+                transform: perspective(120px) rotateX(0deg) rotateY(0deg);
+            }
+            50%{
+                transform: perspective(120px) rotateX(-180deg) rotateY(0deg);  /*좌우로 뒤집는 효과를 주는 것*/
+            }
+            to{
+                transform: perspective(120px)  rotateX(0deg) rotateY(-180deg); /* 위아래로 뒤집는 효과 주는 것 */
+            }
+        }
+        
+
+
+        @keyframes bg {
+            from{
+                background-color: red;
+            }
+            50%{
+                background-color: blue;
+            }
+            to{
+                background-color: pink;
+            }
+            
+        }
+
+        @keyframes rotate0 {
+            from{
+                transform:  rotateX(0deg) rotateY(0deg);
+            }
+            50%{
+                transform:  rotateX(-180deg) rotateY(0deg);
+            }
+            to{
+                transform:   rotateX(0deg) rotateY(-180deg);
+            }
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="box1"> </div>
+    <div class="box2"> </div>
+    <div class="box3"> </div>
+</body>
+</html>
