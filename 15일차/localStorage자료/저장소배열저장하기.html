@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+    
+    
+
+    <script>
+  
+     // 로컬저장소 저장하기, 가져오기 연습
+     let fruits =  ['apple', 'banana', 'melon'];
+
+    // 배열확인하기 ,  로컬저장소에 저장시  배열객체를 문자열로 변환해야 함 
+     console.log(  fruits);
+     console.log(  JSON.stringify( fruits) ) ;
+ 
+    localStorage.setItem("fruits" , JSON.stringify( fruits));    /// 배열을 문자열화 함 
+
+
+    // 로컬저자소에서  키갑으로 가져오기
+    let  fruitsString  = localStorage.getItem("fruits");
+    console.log( "읽어온값" + fruitsString);
+
+    //다시 배열객체로 변환        
+    fruits=  JSON.parse( fruitsString);   // 문자열  ->  배열객체로 변환 함
+    console.log(  "다시 배열로 " +  fruits);
+    console.log( fruits);
+
+ 
+
+
+
+ 
+
+    </script>
+    
+</body>
+</html>
